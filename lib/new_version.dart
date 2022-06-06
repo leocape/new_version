@@ -200,8 +200,6 @@ class NewVersion {
       releaseNotes: releaseNotes,
     );
   }
-
-  String _getCleanVersion(String version) => RegExp(r'\d+\.\d+\.\d+').stringMatch(version) ?? '0.0.0';
   
   /// Shows the user a platform-specific alert about the app update. The user
   /// can dismiss the alert or proceed to the app store.
